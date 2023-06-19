@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+           background: black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           
+
+
+        }
+        .main{
+            height: 300px;
+            width: 600px;
+            position: relative;
+            margin: 100px auto;
+        
+        }
+        .card{
+            height: inherit;
+            width: inherit;
+            background: rgba(0,0,0,0.5);
+            box-shadow: 0 0 20px white inset;
+            border-radius: 10px;
+            backdrop-filter: blur(9px);
+        }
+        .circle1{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            top: -100px;
+            left: -100px;
+            background: red;
+            position: absolute;
+            z-index: -1;
+        }
+        .circle2{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 250px;
+            background: blueviolet;
+            z-index: -1;
+
+        }
+        .circle3{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            border-radius: 50%;
+            background: lime;
+            top:200px;
+            left:500px;
+            z-index: -1;
+
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ box-sizing: border-box;}
+        body{
+            background-color: green;
+        }
+        .x{
+            height: 200px;
+            width: 200px;
+            background-color:whitesmoke;
+            margin: 200px auto;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .y{
+            height: 100px;
+            width: 100px;
+            background-color:whitesmoke;
+            border-radius: 50%;
+            animation: identifier 7s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .z{
+            height: 50px;
+            width: 50px;
+            background-color: whitesmoke;
+            border-radius: 50%;
+            animation: identifier 7s infinite;
+            
+        }
+        @keyframes identifier {
+            from{transform: scale(1.5);opacity:1;}
+            to{transform: scale(4);opacity:0;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            <div class="z"></div>
+        </div>
+    </div>
+</body>
+</html>

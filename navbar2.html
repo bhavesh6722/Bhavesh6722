@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+        background: red;
+        text-align: center;
+        padding: 5px 0;
+
+    
+        }
+        .menu{
+            display: inline;
+            margin-left: 20px;
+            position: relative;
+            padding: 20px 0px;
+
+        }
+        a{
+            text-decoration:none;
+            color: black;
+        }
+        .submenu{
+            list-style-type: none;
+            position: absolute;
+            top:100%;
+            left:0;
+            background: darkgoldenrod;
+            display: none;
+            padding-right: 30px;
+            
+            
+            
+
+        }
+        .inlinemenu{
+            list-style-type: none;
+            top: 100%;
+            left:0;
+            width:100px;
+            background: lightcoral;
+            display: none;
+            position: absolute;
+
+        }
+        .menu:hover .submenu
+        {
+            display: block;
+        }
+        .e:hover .inlinemenu{
+            display: block;
+        
+        }
+    </style>
+</head>
+<body>
+        <div class="nav">
+        <ul>
+            <li class="menu"> <a href="">Home</a></li>
+            <li class="menu"><a href="">About</a></li>
+            <li class="menu"><a href="">Service</a>
+
+            <ul class="submenu">
+                <li><a href="">service1</a></li>
+                <li class="e"><a href="">service2</a>
+    
+
+                <ul class="inlinemenu">
+                    <li><a href="">unit1</a></li>
+                    <li><a href="">unit2</a></li>
+                    <li><a href="">unit3</a></li>
+                    <li><a href="">unit4</a></li>
+                </ul>
+                
+                </li>
+                <li><a href="">service3</a></li>
+                <li><a href="">service4</a></li>
+            </ul>
+            
+            </li>
+            <li class="menu"><a href="">Contact</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
